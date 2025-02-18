@@ -3,6 +3,7 @@
 
 ### End-to-end Architecture
 * Programming language: Python  [.... version]
+* Environment: Linux
 * Library dependencies: Google Cloud SDK [.... version]
 * Datalake: Google Cloud Storage
   - Format type: Avro
@@ -18,11 +19,13 @@
 
 ### Prerequisites
 1. Create Google account and enable Bigquery sandbox ([link](https://cloud.google.com/bigquery/docs/sandbox#get_started))
-3. Install Docker. You can use Docker App ([link](https://docs.docker.com/desktop/)) but since it's used for enterprise purposed, you can use Orbstack for Docker desktop ([link](https://docs.orbstack.dev/quick-start))
+2. Install Docker. You can use Docker App ([link](https://docs.docker.com/desktop/)) but since it's used for enterprise purposed, you can use Orbstack for Docker desktop ([link](https://docs.orbstack.dev/quick-start))
 4. .... [environment setup]
 
 ### How to use
-1. Install requirement.txt 
+1. Download the repositories and go to project folder
+2. Run Docker compose to install the requirements and Airflow
+>docker compose up -d
 2. Download...
 
 ### Project Structure
