@@ -1,8 +1,10 @@
 # Airflow with Docker Containerization
+## Table of contents
 1. [Requirements](#requirements)
 2. [Prerequisites](#prerequisites)
 3. [How to use](#how-to-use)
 4. [Project Structure](#project-structure)
+5. [Data Analysis](#data-analysis)
 
 ### Requirements
 * Programming language: Python 3.8.18
@@ -40,9 +42,6 @@ c. Activate Google Cloud Storage bucket in multi-region US with name: __demo_air
 6. Turn on DAG **bikeshare_etl** and trigger the task instance
 7. Your can see raw data stored in GCS while the external table stored in Bigquery dataset **biglake** table **bikeshare**
 
-For Task 5: Data Analysis, 
-> I use my external table as source table. I also add an Airflow task instance to create a datamart table in Bigquery, but only to answer two questions because I didn't find any key to join result between each question. Hence, I attach my answer in SQL file `dags/bikeshare_analysis.sql`
-
 ### Project Structure
 ```
 ├── dags/
@@ -57,3 +56,6 @@ For Task 5: Data Analysis,
 ├── requirements.txt
 ├── README.md
 ```
+
+### Data Analysis
+> I use my external table as source table. I also add an Airflow task instance to create a datamart table in Bigquery, but only to answer two questions because I didn't find any key to join result between each question. Hence, I attach my answer in SQL file `dags/bikeshare_analysis.sql`
