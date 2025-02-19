@@ -1,6 +1,6 @@
 # Airflow with Docker Containerization
-1. [Requirements](#requirements-)
-2. [Prerequisites](#prerequisites-)
+1. [Requirements](#requirements)
+2. [Prerequisites](#prerequisites)
 3. [How to use](#how-to-use)
 4. [Project Structure](#project-structure)
 
