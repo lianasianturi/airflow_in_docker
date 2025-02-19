@@ -23,14 +23,14 @@
 1. Create Google account and enable Bigquery sandbox ([link](https://cloud.google.com/bigquery/docs/sandbox#get_started))
 2. Install Docker. You can use Docker App ([link](https://docs.docker.com/desktop/)) but since it's used for enterprise purposed, you can use Orbstack for Docker desktop ([link](https://docs.orbstack.dev/quick-start))
 3. Create a project in the Google Cloud Platform Console ([link](https://cloud.google.com/cloud-console?hl=en))
- a. Create Google Service Account ([link](https://cloud.google.com/iam/docs/service-accounts-create#creating)) and add below permission:
+<br /> a. Enable Google Bigquery ([link](https://console.cloud.google.com/bigquery))
+<br /> b. Activate Google Cloud Storage bucket in multi-region US with name: __demo_airflow__ ([link](https://console.cloud.google.com/storage/browser))
+<br /> c. Create Google Service Account ([link](https://cloud.google.com/iam/docs/service-accounts-create#creating)) and add below permissions:
 ```
 roles/bigquery.dataEditor
 roles/bigquery.jobUser
 roles/storage.objectAdmin
 ```
-b. Enable Google Bigquery ([link](https://console.cloud.google.com/bigquery))
-c. Activate Google Cloud Storage bucket in multi-region US with name: __demo_airflow__ ([link](https://console.cloud.google.com/storage/browser))
 
 ### How to use
 1. Download the repositories and go to project folder
