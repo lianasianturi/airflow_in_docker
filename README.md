@@ -17,7 +17,7 @@
 * Container: Docker
 * Task schedule: Daily once at 12 AM UTC
 * Source data: Google BigQuery public dataset *austin_bikeshare.bikeshare_trips*
-* Target destination table: `project-id.biglake.bikeshare` with partition *date* (type:STRING) and *hour* (type:STRING). External table recreated daily.
+* Target external table: `project-id.biglake.bikeshare` with partition *date* (type:STRING) and *hour* (type:STRING). External table recreated daily.
 
 ### Prerequisites
 1. Create Google account and enable Bigquery sandbox ([link](https://cloud.google.com/bigquery/docs/sandbox#get_started))
@@ -58,4 +58,4 @@ c. Activate Google Cloud Storage bucket in multi-region US with name: __demo_air
 ```
 
 ### Data Analysis
-> I use my external table as source table. I also add an Airflow task instance to create a datamart table in Bigquery, but only to answer two questions because I didn't find any key to join result between each question. Hence, I attach my answer in SQL file `dags/bikeshare_analysis.sql`
+> *I used external table result as source table for data analysis. I also added an Airflow task instance to create a datamart table in Bigquery, but only to answer two questions because I didn't find any key to join result between each question. Hence, I attach my answer in SQL file `dags/bikeshare_analysis.sql`. Thank you!*
